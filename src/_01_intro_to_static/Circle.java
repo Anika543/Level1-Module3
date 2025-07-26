@@ -10,6 +10,8 @@ public class Circle {
     /*
      * Add/remove the word "static" at the beginning of these variables
      */
+   
+    
     int radius;
     Color color;
 

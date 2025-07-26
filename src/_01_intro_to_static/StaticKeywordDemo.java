@@ -7,6 +7,7 @@ import java.awt.Color;
  * 
  * Member variable vs Class variable:
  * 1. Run the program and move the sliders.
+ * 
  *    Notice that changing the radius or color of one of the sliders only
  *    affects one of the circles.
  * 
@@ -60,18 +61,24 @@ import java.awt.Color;
  *    member variables inside the static addCircles() method.
  */
 public class StaticKeywordDemo {
-    Canvas canvas;
+	static Canvas canvas;
     
     StaticKeywordDemo() {
         canvas = new Canvas();
         addCircles();
     }
     
-    void addCircles() {
-        
+    static void addCircles() {
+    
         Circle circle1 = new Circle(20, Color.BLUE);
         Circle circle2 = new Circle(50, Color.RED);
         Circle circle3 = new Circle(100, Color.GREEN);
+        
+       
+        	System.out.println("circle radius = " + circle1.radius);
+            System.out.println("circle color = " + circle1.color);
+   
+        
         
         canvas.addCircle(circle1);
         canvas.addCircle(circle2);
