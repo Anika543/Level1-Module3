@@ -20,6 +20,10 @@ public class ListOfMovies {
 		x.addMovie(movie5);
 		
 		x.printMovies();
+		x.sortMoviesByRating();
+		
+		System.out.println("The best movie is " + x.getBestMovie());
+		System.out.println("The second best movie is " + x.getMovie(1)); 
 
 	}
 
